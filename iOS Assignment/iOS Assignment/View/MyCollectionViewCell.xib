@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="iOS_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Www-Gg-omR">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zNc-4s-0Zg">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zNc-4s-0Zg" secondAttribute="trailing" id="225-X4-a3v"/>
+                            <constraint firstItem="zNc-4s-0Zg" firstAttribute="top" secondItem="Www-Gg-omR" secondAttribute="top" id="BlC-Eg-7ex"/>
+                            <constraint firstAttribute="bottom" secondItem="zNc-4s-0Zg" secondAttribute="bottom" id="PqY-2x-SV2"/>
+                            <constraint firstItem="zNc-4s-0Zg" firstAttribute="leading" secondItem="Www-Gg-omR" secondAttribute="leading" id="Vbq-xQ-Qjv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Www-Gg-omR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9Nc-P2-aA4"/>
+                <constraint firstItem="Www-Gg-omR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="F35-li-ngj"/>
+                <constraint firstAttribute="trailing" secondItem="Www-Gg-omR" secondAttribute="trailing" id="Kfj-WA-5Ki"/>
+                <constraint firstAttribute="bottom" secondItem="Www-Gg-omR" secondAttribute="bottom" id="bOS-If-5cb"/>
+            </constraints>
+            <connections>
+                <outlet property="acharyaPrashantImage" destination="zNc-4s-0Zg" id="gBQ-iD-5da"/>
+            </connections>
+            <point key="canvasLocation" x="-119" y="104"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
